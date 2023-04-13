@@ -4,6 +4,10 @@ if (isNaN(x)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < x; i++) {
-    console.log('X'.repeat(x));
+    let line = '';
+    for (let j = 0; j < x; j++) {
+      line += 'X';
+    }
+    console.log(line);
   }
 }
